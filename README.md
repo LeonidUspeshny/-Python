@@ -338,6 +338,19 @@ for key in range(10, -6, -1):
     result_dict[key] = key ** key   
 print(result_dict)  
 
+# Доп задание:  
+Создаем пустой словарь  
+my_dict = {}  
+Запрашиваем у пользователя 5 слов и их значения  
+for i in range(5):  
+    key = input(f"Введите слово {i + 1}: ")  
+    value = input(f"Введите значение для слова '{key}': ")  
+    my_dict[key] = value  
+Выводим созданный словарь  
+print("Созданный словарь:")  
+print(my_dict)  
+
+
 
 
 
