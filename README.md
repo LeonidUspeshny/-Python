@@ -473,6 +473,23 @@ while True:
         age = int(input('Введите возраст питомца: '))  
         update(c, name, species, age)  
 
+# Урок №13. Двумерные списки  
+
+Задание №1  
+С помощью цикла создайте матрицу вида 10x10  
+И нужно придумать, как их сложить, чтобы получить matrix_3:  
+import random  
+matrix_1 = [[random.randint(-50, 200) for _ in range(10)] for _ in range(10)]  
+matrix_2 = [[random.randint(-50, 200) for _ in range(10)] for _ in range(10)]  
+print('matrix_1')  
+for row1 in matrix_1:  
+    print(*row1)  
+print('matrix_2')    
+for row2 in matrix_2:  
+    print(*row2)  
+
+
+
 
 
 
