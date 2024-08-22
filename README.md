@@ -513,6 +513,44 @@ def print_elements(lst, index=0):
     else:  
         print("Конец списка")  
 print_elements(my_list)  
+# Объктно Ориентированное Программирование  
+Задание №1  
+Есть родительский класс:  
+class Transport:  
+    def __init__(self, name, max_speed, mileage):  
+        self.name = name  
+        self.max_speed = max_speed  
+        self.mileage = mileage  
+
+ Создайте объект Autobus, который унаследует все переменные и методы  
+родительского класса Transport и выведете его.  
+Ожидаемый результат вывода:  
+Название автомобиля: Renaul Logan Скорость: 180 Пробег: 12  
+Решение:  
+    def Autobus(self):  
+        print(f'Название автомобиля {self.name}, Скорость {self.max_speed}, Пробег {self.mileage}')          
+transport = Transport('Renault Logan', 180, 12)  
+transport.Autobus()  
+Задание №2  
+Создайте класс Autobus, который наследуется от класса Transport.  
+Дайте аргументу Autobus.seating_capacity() значение по умолчанию 50.  
+Используйте переопределение метода.  
+Решение:  
+class Transport():  
+    def __init__(self, name, max_speed, mileage):  
+        self.name = name  
+        self.max_speed = max_speed  
+        self.mileage = mileage                 
+class Autobus(Transport):     
+        def __init__(self, name, max_speed, mileage):  
+            super().__init__(name, max_speed, mileage)              
+        def seating_capacity(self, capacity=50):  
+            return f"Вместимость автобуса {self.name}: {capacity} мест"      
+transport = Autobus('Renault Logan', 180, 12)  
+print(transport.seating_capacity())  
+        
+
+
 
 
     
